@@ -6,7 +6,9 @@
   "scripts": {
     "test": "cross-env NODE_ENV=test SECRET_KEY=chavesecreta jest --forceExit --runInBand",
     "dev": "ts-node-dev --ignore-watch node_modules --cls --rs src/server.ts",
-    "typeorm": "typeorm-ts-node-commonjs"
+    "typeorm": "typeorm-ts-node-commonjs",
+    "build": "tsc",
+    "start": "node dist/server.js"
   },
   "devDependencies": {
     "@jest/globals": "^29.4.3",
